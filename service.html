@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Co-ordination</title>
+    <style>
+*{
+margin:0px;
+padding:0px;
+}
+body{
+    overflow-x: hidden;
+}
+
+.container h1{
+background-color:#123033;
+width:100%;
+height:200px;
+color:white;
+line-height: 100px;
+text-align: center;
+font-weight: lighter;
+font-size:3.8rem;
+padding:50px 0px 0px 20px;
+}
+.service_contents{
+display:block;
+}
+.service_heading{
+display:flex;
+}
+
+.service_heading h1{
+color:white;
+font-size: 2.8rem;
+}
+.service_contents{
+display:block;
+background-color:#123033;
+color:white;
+}
+.service_heading{
+display:flex;
+}
+.service_heading h1{
+color:white;
+font-weight: lighter;
+font-size: 2.8rem;
+}
+.service_text{
+font-size:1.7rem;
+}
+.bidding{
+background-color:#123033;
+color:white;
+font-size:1.7rem;
+text-align:center;
+}
+.fa-comment{
+    color: white;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 30px auto;
+}
+th{
+  font-size: 1.6rem;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+th a{
+  text-decoration: none;
+  color:white;
+}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+    background-color: #123033;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: relative;
+    left:10px;
+    bottom: 3px;
+    right: 28px;
+    width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.sticky-social{
+  position:relative;
+  padding:0px;
+  margin:0px;
+}
+.social{
+  list-style:none;
+  padding-left: 680px;
+}
+.social li{
+  padding:10px 10px;
+  font-size:25px;
+  transition:all 0.8s ease-in-out;
+  text-align:center;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+.fa-facebook{
+  font-size: 2.2rem;
+  color: #4267B2;
+}
+.fa-twitter{
+  font-size: 2.2rem;
+  color: #1DA1F2;
+}
+.fa-linkedin{
+  font-size: 2.2rem;
+  color: #0A66C2;
+}
+
+#logo{
+  width:50px;
+  height:50px;
+}
+
+.header{
+  width: 100%;
+  height: 100px;
+  line-height: 30px;
+  font-family: Arial,Helvetica,sans-serif;
+  color: #0D2123;
+}
+.logo{
+  margin-left:70px;
+  margin-top: 5px;
+  float: left;
+}
+.logo img{
+  width: 70px;
+  height: 70px;
+}
+.header a{
+  width: 150px;
+  height:100px;
+  padding-top:25px ;
+  margin-left: 20px;
+  float: left;
+  text-decoration: none;
+  color: #0D2123;
+  text-align: center;
+  opacity: 0.8;
+  font-size: 1.1rem;
+}
+.navigation ul{
+  float: right;
+  list-style-type: none;
+  margin-right: 10px;
+}
+.navigation ul li{
+  display: inline-block;
+  padding: 10px;  
+  width: 150px;
+  height: 50px;
+}
+
+.copr{
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 10px;
+}
+    </style>
+    <script src="https://kit.fontawesome.com/644f9c88c4.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+  <div class="header"> 
+    <div class="logo">
+    <img src="service.png">
+  </div>
+  <a href="">Easy Manage</a>
+  <div class="navigation">
+    <ul>
+      <li><a href="#">Why EasyManage</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="#">Contact us</a></li>
+      <li><a href="#">Log in</a></li>
+    </ul>
+
+  </div>
+</div>
+
+    <div class="container">
+        <h1>Project Co-ordination</h1>
+    </div>
+    <div class="service_contents">
+        <div class="service_heading">
+            <h1>Performance Improvements <i class="fas fa-chart-line"></i></h1>       
+        </div> 
+        <table>
+          <tr>
+            <th>Ready</th>
+            <th>In Progress</th>
+            <th>Done</th>
+            <th rowspan="4"><a href="#bidding">Bidd</a></th>
+          </tr>
+          <tr>
+            <td>Design Navigation Changes</td>
+            <td>Build Social Sharing functionality</td>
+            <td>Usability Testing</td>
+            <!-- <td><button class="open-button" onclick="openForm()"><i class="fas fa-comment"></i></button></td> -->
+          </tr>
+          <tr>
+            <td>Design Prototype</td>
+            <td></td>
+            <td>Introduce New Navigation</td>
+            <!-- <td><button class="open-button" onclick="openForm()"><i class="fas fa-comment"></i></button></td> -->
+          </tr>
+          <tr>
+            <td>Website Re-design</td>
+            <td>Re-design Overview</td>
+            <td></td>
+            <!-- <td></td> -->
+          </tr>
+        </table>
+       <!-- <div class="service_text">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repellendus odio magni, voluptatem deleniti necessitatibus libero accusamus ipsa dignissimos amet aliquid tempora ullam explicabo eos nisi veniam vero veritatis sed!
+            </p>
+        </div>-->
+        <div class="service_heading">
+            <h1>Implement New Designs</h1>
+        </div>
+       <!-- <div class="service_text">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repellendus odio magni, voluptatem deleniti necessitatibus libero accusamus ipsa dignissimos amet aliquid tempora ullam explicabo eos nisi veniam vero veritatis sed!
+            </p>
+        </div>-->
+
+    </div>
+    <div class="service_bidding">
+        <div class="bidding">
+            <h1 id="bidding">Bidding</h1>
+<table>
+  <tr>
+    <th>Bidding</th>
+    <th>Project Name</th>
+    <th>Status</th>
+    <th>Bidding Site</th>
+  </tr>
+  <tr>
+    <td>Client</td>
+    <td>Web Developmet</td>
+    <td>Active</td>
+    <td><button class="open-button" onclick="openForm()"><i class="fas fa-comment"></i></button></td>
+  </tr>
+  <tr>
+    <td>Student</td>
+    <td>Web Development</td>
+    <td>Processing</td>
+    <td><button class="open-button" onclick="openForm()"><i class="fas fa-comment"></i></button></td>
+  </tr>
+</table>
+    </div>
+         
+    </div>
+    <div class="chat-popup" id="myForm">
+        <form action="#" class="form-container">
+          <h1>Click here to Start Bidding</h1>
+      
+          <label for="msg"><b>Message</b></label>
+          <textarea placeholder="Type message.." name="msg" required></textarea>
+      
+          <button type="submit" class="btn">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+      <div class="sticky-social">
+        <ul class="social">
+          <li class="fb"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li class="twitter"><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li class="linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+          </ul>
+          <div class="copr">
+            &copy;2021 by Easy Manage
+          </div>
+        </div>
+      <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
+</body>
+</html>
