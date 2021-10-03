@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.headbar{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fffef0;
+    background-color: #fffffe;
+}
+.logo{
+    width: 60px;
+    cursor: pointer;
+}
+.logo-text{ text-decoration: none;
+    color :black;
+    font-style: bold;
+    font-size: 30px;
+    position: relative;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    left: 80px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color :black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+nav ul li a:hover{
+	color:#ff5ea2;
+}
+.content{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 15%;
+    bottom: 5%;
+    text-align: center;
+    color: #fff;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 15px;
+}
+
+.content-s{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 15%;
+    bottom: 5%;
+    text-align: center;
+    background-color: rgb(102, 141, 94);
+    
+    background-attachment: fixed;
+    padding: 15px;
+}
+.content h1{
+    font-size: 60px;
+    margin-top: 80px;
+    font-weight: bold;
+    font-style: ;
+    text-align: center;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.footer img{
+	margin: 20px;
+	cursor: pointer; 
+	width:50px;
+}
+.footer{
+	text-align: center;
+}
+.footer p{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+services page
+
+
+.content-s h1{
+    font-size: 60px;
+    color: #faf8f8;
+    margin-top: 80px;
+    font-weight: bold;
+    font-style: ;
+    text-align: center;
+}
+.content-s h2{
+    font-size: 4
+    0px;
+	color: #faf8f8;
+	font-weight: 100;
+    margin-left: 50px;
+}
+.content-s h3{
+    font-size: 40px;
+	color: #faf8f8;
+	font-weight: 100;
+    margin-left: 50px;
+    
+}
+.content-s p2{
+    font-size: 20px;
+	color: #faf8f8;
+	font-weight: 100;
+    margin-left: 50px;
+}
+.content-s p3{
+    font-size: 20px;
+	color: #faf8f8;
+	font-weight: 100;
+    margin-left: 50px;
+    
+}
+
+.pcimg{
+    width: 30%;
+  height: 250px;
+  margin-right: 0pc;
+
+}
+.pdimg{
+    width: 30%;
+  height: 250px;
+  margin-right: 0pc;
+
+}
